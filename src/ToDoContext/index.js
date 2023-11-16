@@ -8,7 +8,7 @@ function ToDoProvider({ children }) {
     const [openModal, setOpenModal] = React.useState([false,'modalTodo']);
     const [addedEvent, setAddedEvent] = React.useState(false);
     const [errorAddedEvent, setErrorAddedEvent] = React.useState([false,false,false]);
-    const [nClick, setNClick] = React.useState([0,0]);
+    const [nClick, setNClick] = React.useState([0,0,0]);
     const {
         item, 
         saveItem: saveToDos,
