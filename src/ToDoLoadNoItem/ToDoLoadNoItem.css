@@ -1,0 +1,57 @@
+span.todo-load-no-todo svg .cls-1 {
+    fill: #13436D;
+    animation: loadAnimationNoTodo_1 1s ease 1;
+}
+span.todo-load-no-todo svg .cls-2 {
+    fill: #E1E1E0;
+    animation: loadAnimationNoTodo_2 1s ease 1;
+}
+span.todo-load-no-todo svg {
+    width: 100px;
+    animation: loadAnimationNoTodo_3 1s ease 1;
+}
+span.todo-load-no-todo h2 {
+    animation: loadAnimationNoTodo_3 1s ease 1;
+}
+span.todo-load-no-todo {
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes loadAnimationNoTodo_1 {
+    0%{
+        fill: #13436D;
+    }
+    50% {
+        fill: #E1E1E0;
+    }
+    100%{
+        fill: #13436D;
+    }
+}
+@keyframes loadAnimationNoTodo_2 {
+    0%{
+        fill: #E1E1E0;
+    }
+    50% {
+        fill: #13436D;
+    }
+    100%{
+        fill: #E1E1E0;
+    }
+}
+@keyframes loadAnimationNoTodo_3 {
+    0%{
+        scale: 1;
+    }
+    50% {
+        scale: 1.1;
+    }
+    100%{
+        scale: 1;
+    }
+}

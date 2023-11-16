@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #13436D;
+    height: 100vh;
+    color: #E1E1E0;
+
+}
+.blur {
+    filter: blur(3px);
+}
+.offBlur {
+    filter: none;
+    transition: all .5s;
+}

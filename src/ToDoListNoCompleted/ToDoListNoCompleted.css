@@ -1,0 +1,14 @@
+ul {
+    display: flex;
+    position: relative;
+    margin: 0;
+    padding: 0 40px;
+    flex-direction: column;
+    border-radius: 5px;
+    width: 320px;
+    background-color: #1E1E1E;
+    height: auto;
+    overflow: visible;
+    border: none;
+}
+

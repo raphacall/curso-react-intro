@@ -1,0 +1,54 @@
+button.create-todo-button {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background-color: #13436D;
+    box-sizing: border-box;
+    bottom: 20px;
+    right: 22.5px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 
+        1px 1px 3px rgba(0, 0, 0, 0.3),
+        1px -1px 3px rgba(0, 0, 0, 0.3),
+        -1px -1px 3px rgba(0, 0, 0, 0.3),
+        -1px 1px 3px rgba(0, 0, 0, 0.3);
+    width: 60px;
+    height: 60px;
+    color: #E1E1E0;
+    font-size: 30pt;
+    transform: rotate(0deg);
+    transition: all .5s;
+    cursor: pointer;
+}
+button.create-todo-button:hover {
+    width: 160px;
+    transition: 0.2s;
+}
+button.create-todo-button > p.add {
+    display: inline;
+    margin-left: 10px;
+    font-size: 12pt;
+    width: max-content;
+    opacity: 0;
+    transition: all .2s;
+}
+
+
+button.create-todo-button:hover > p.add {
+    display: block;
+    opacity: 1;
+    transition: opacity .2s .1s;
+}
+button.create-todo-button > p.plus {
+    position: absolute;
+    transform: rotate(0deg);
+    transition: .5s;
+}
+
+
+button.create-todo-button:hover > p.plus {
+    position: relative;
+    transform: rotate(360deg);
+}

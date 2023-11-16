@@ -1,0 +1,102 @@
+*{
+    --calc : calc(50vh - 140px);
+}
+
+form.add-list-form-box{
+    display: flex;
+    position: absolute;
+    height: 170px;
+    width: 200px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    top: var(--calc);
+    background-color: #1e1e1e;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 
+        1px 1px 3px rgba(0, 0, 0, 0.5),
+        1px -1px 3px rgba(0, 0, 0, 0.5),
+        -1px -1px 3px rgba(0, 0, 0, 0.5),
+        -1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.add-form-label{
+    text-align: center;
+    color: #e1e1e0;
+    font-size: 12pt;
+    font-weight: 700;
+}
+
+.add-list-form-input{
+    display: table-cell;
+    border-radius: 5PX;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    resize: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.buttons-div{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.add-form-bt {
+    background-color: #13436D;
+    color: #e1e1e0;
+    font-weight: 700;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: calc(50% - 10px);
+
+    
+}
+.cancel-form-bt {
+    background-color: #e1e1e0;
+    color: #13436D;
+    font-weight: 700;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: calc(50% - 10px);
+}
+.cancel-form-bt:hover,.add-form-bt:hover {
+    cursor: pointer;
+    scale: 1.05;
+}
+
+form.add-list-form-box.added{
+    animation: animationAdded 1s ease;
+    top: 102vh;
+    opacity: 0;
+}
+
+p.error-added-ms{
+    color: red;
+    font-size: 10px;
+    margin: 0;
+}
+
+
+
+
+@keyframes animationAdded {
+    0%{
+        top: var(--calc); 
+        opacity: 1;
+    }
+    50%{
+        top: 102vh;
+        opacity: .5;
+    }
+    100% {
+        top: 102vh;
+        opacity: 0;
+    }
+}
+

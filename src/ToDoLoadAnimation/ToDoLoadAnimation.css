@@ -1,0 +1,55 @@
+span.todo-load-animation svg .cls-1 {
+    fill: #13436D;
+    animation: loadAnimation_1 1s ease infinite;
+}
+span.todo-load-animation svg .cls-2 {
+    fill: #E1E1E0;
+    animation: loadAnimation_2 1s ease infinite;
+}
+span.todo-load-animation svg {
+    width: 100px;
+    animation: loadAnimation_3 1s ease infinite;
+}
+span.todo-load-animation {
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100% - 100px);
+}
+
+@keyframes loadAnimation_1 {
+    0%{
+        fill: #13436D;
+    }
+    50% {
+        fill: #E1E1E0;
+    }
+    100%{
+        fill: #13436D;
+    }
+}
+@keyframes loadAnimation_2 {
+    0%{
+        fill: #E1E1E0;
+    }
+    50% {
+        fill: #13436D;
+    }
+    100%{
+        fill: #E1E1E0;
+    }
+}
+@keyframes loadAnimation_3 {
+    0%{
+        scale: 1;
+    }
+    50% {
+        scale: 1.1;
+    }
+    100%{
+        scale: 1;
+    }
+}
+
+

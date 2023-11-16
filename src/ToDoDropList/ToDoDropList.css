@@ -1,0 +1,19 @@
+li.option-list{
+    display: flex;
+    width: 160px;
+    height: 40px;
+    justify-content: left;;
+    align-items: center;
+    border-bottom: #1e1e1e solid .5px;
+    background: #13436D;
+}
+li.option-list:hover{
+    background: #13436D95;
+    color: #eee;
+}
+li.option-list:last-child{
+    border-bottom: none;
+}
+p.text-list-todo{
+    margin-left: 40px;
+}

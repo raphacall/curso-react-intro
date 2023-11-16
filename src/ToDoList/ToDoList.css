@@ -1,0 +1,28 @@
+div.to-do-list {
+  display: flex;
+  position: relative;
+  margin:0;
+  padding: 0;
+  flex-direction: column;
+  border-radius: 5px;
+  width: 100%;
+  background-color: #1E1E1E;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+  box-sizing: border-box;
+}
+
+div.to-do-list::-webkit-scrollbar {
+    width: 2.5px;               /* width of the entire scrollbar */
+  }
+  
+div.to-do-list::-webkit-scrollbar-track {
+background: #1E1E1E;        /* color of the tracking area */
+}
+
+div.to-do-list::-webkit-scrollbar-thumb {
+background-color: #13436D;    /* color of the scroll thumb */
+border-radius: 2.5px;       /* roundness of the scroll thumb */
+  /* creates padding around scroll thumb */
+}

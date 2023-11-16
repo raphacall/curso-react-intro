@@ -1,0 +1,23 @@
+div.div-list-todos {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+}
+button.icon-list-svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #13436D;
+    border: none;
+    border-radius: 0px 0px 5px 5px;
+    width: 40px;
+    cursor: pointer;
+}
+button.icon-list-svg span svg{
+    height: 20px;
+}
+
+svg .list-white-1{
+    fill: #E1E1E0;
+}
