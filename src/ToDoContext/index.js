@@ -8,6 +8,7 @@ function ToDoProvider({ children }) {
     const [openModal, setOpenModal] = React.useState([false,'modalTodo']);
     const [addedEvent, setAddedEvent] = React.useState(false);
     const [errorAddedEvent, setErrorAddedEvent] = React.useState([false,false,false]);
+    const [nClick, setNClick] = React.useState([0,0]);
     const {
         item, 
         saveItem: saveToDos,
@@ -19,6 +20,7 @@ function ToDoProvider({ children }) {
 
       const toDos = item[selectList[1]].toDos;
       const toDoF = toDos.filter(todo => todo.completed).length;
+      
 
       const act =() =>{
         setSelectList([item[0].name,0]);
@@ -177,7 +179,9 @@ function ToDoProvider({ children }) {
             selectList,
             setAddedEvent,
             deleteList,
-            renameList
+            renameList,
+            nClick,
+            setNClick
         }}>
             { children }
         </ToDoContext.Provider>

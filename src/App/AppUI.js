@@ -42,7 +42,9 @@ function AppUI(){
         selectList,
         setAddedEvent,
         deleteList,
-        renameList
+        renameList,
+        nClick,
+        setNClick
 
     } = React.useContext(ToDoContext);
     return (
@@ -62,7 +64,13 @@ function AppUI(){
                         renameList={renameList}
                     >      
                         <CreateNewListButton 
-                            onClick={()=> setOpenModal([true,'modalList'])}
+                            onClick={()=> {
+                                setNClick([nClick[0],nClick[1]+1]);
+                                if (nClick[1] === 2)  {
+                                    setNClick([nClick[1],0]);
+                                    setOpenModal([true,'modalList']);
+                                }
+                            }}
                         />
                     </ToDoListDiv>
                     <ToDoList>
@@ -96,7 +104,13 @@ function AppUI(){
                         </ToDoListNoCompleted>
                     </ToDoList>
                     <CreateToDoButton 
-                        onClick={()=> setOpenModal([true,'modalTodo'])}
+                        onClick={()=> {
+                            setNClick([nClick[0]+1,nClick[1]]);
+                            if (nClick[0] === 2)  {
+                                setNClick([0,nClick[1]]);
+                                setOpenModal([true,'modalTodo']);
+                            }
+                        }}
                     />
                 </ToDoBox>
                     {openModal[0] && (
