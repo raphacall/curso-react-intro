@@ -1,5 +1,5 @@
 {
-  "short_name": "React App",
+  "short_name": "Roads",
   "name": "Create React App Sample",
   "icons": [
     {
@@ -8,12 +8,12 @@
       "type": "image/x-icon"
     },
     {
-      "src": "react192.png",
+      "src": "roads192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "react512.png",
+      "src": "roads512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
