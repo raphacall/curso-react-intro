@@ -85,8 +85,20 @@ function AppUI(){
                                     key={toDo.text}
                                     text={toDo.text}
                                     completed={toDo.completed}
-                                    onCheckToDo={() => checkToDo(toDo.text)}
-                                    onDeleteToDo={() => deleteToDo(toDo.text)}
+                                    onCheckToDo={() => {
+                                        setNClick([0,0,nClick[2]+1]);
+                                        if (nClick[2] === 1)  {
+                                            setNClick([0,0,0]);
+                                            checkToDo(toDo.text)   
+                                        }
+                                    }}
+                                    onDeleteToDo={() => {
+                                        setNClick([0,0,nClick[2]+1]);
+                                        if (nClick[2] === 1)  {
+                                            setNClick([0,0,0]);
+                                            deleteToDo(toDo.text)  
+                                        }
+                                    }}
                                 />
                             ))}
                         </ToDoListNoCompleted>
