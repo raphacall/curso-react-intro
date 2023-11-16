@@ -36,6 +36,7 @@ function ToDoProvider({ children }) {
         newToDos[todoIndex].completed = !newToDos[todoIndex].completed;
         newToDosList[selectList[1]] = {id:selectList[1],name:selectList[0],toDos:[...newToDos]}; 
         saveToDos(newToDosList);
+        setNClick([0,0,0]);
       }
       
       const deleteToDo = (key) => {
@@ -45,6 +46,7 @@ function ToDoProvider({ children }) {
         newToDos.splice(todoIndex, 1);
         newToDosList[selectList[1]] = {id:selectList[1],name:selectList[0],toDos:[...newToDos]}; 
         saveToDos(newToDosList);
+        setNClick([0,0,0]);
       }
 
       const addToDo = (newToDo) =>{
