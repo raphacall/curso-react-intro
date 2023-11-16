@@ -17,3 +17,10 @@
     filter: none;
     transition: all .5s;
 }
+
+@media (max-width: 640px) {
+    .container{    
+        width: 100%;
+        height: 100%;
+    }
+}
