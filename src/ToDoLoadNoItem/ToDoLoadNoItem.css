@@ -7,7 +7,7 @@ span.todo-load-no-todo svg .cls-2 {
     animation: loadAnimationNoTodo_2 1s ease 1;
 }
 span.todo-load-no-todo svg {
-    width: 100px;
+    width:200px;
     animation: loadAnimationNoTodo_3 1s ease 1;
 }
 span.todo-load-no-todo h2 {

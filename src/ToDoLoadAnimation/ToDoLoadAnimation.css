@@ -7,7 +7,7 @@ span.todo-load-animation svg .cls-2 {
     animation: loadAnimation_2 1s ease infinite;
 }
 span.todo-load-animation svg {
-    width: 100px;
+    width: 200px;
     animation: loadAnimation_3 1s ease infinite;
 }
 span.todo-load-animation {

@@ -18,7 +18,6 @@ import { CreateNewListButton } from '../CreateNewListButton';
 import { ToDoListDiv } from '../ToDoListDiv';
 import { RenameListForm } from '../RenameListForm';
 
-
 function AppUI(){
     const {
         loading, 

@@ -8,7 +8,7 @@ span.todo-load-error svg .cls-2 {
     animation: loadAnimationError_2 1s ease 3;
 }
 span.todo-load-error svg {
-    width: 100px;
+    width: 200px;
     animation: loadAnimationError_3 1s ease 3;
 }
 span.todo-load-error {
