@@ -19,7 +19,7 @@ div.box-list-todos {
 @media (max-width: 640px) {
     div.box-list-todos { 
         width: 100%;
-        height: 100dvh;
+        height: calc(100dvh - top);
         border-radius: 0;
     }
 }
