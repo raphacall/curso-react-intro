@@ -52,3 +52,36 @@ button.create-todo-button:hover > p.plus {
     position: relative;
     transform: rotate(360deg);
 }
+
+@media screen and (max-width: 640px) {
+    button.create-todo-button:active {
+        width: 160px;
+        transition: 0.2s;
+    }
+    button.create-todo-button > p.add {
+        display: inline;
+        margin-left: 10px;
+        font-size: 12pt;
+        width: max-content;
+        opacity: 0;
+        transition: all .2s;
+    }
+    
+    
+    button.create-todo-button:active > p.add {
+        display: block;
+        opacity: 1;
+        transition: opacity .2s .1s;
+    }
+    button.create-todo-button > p.plus {
+        position: absolute;
+        transform: rotate(0deg);
+        transition: .5s;
+    }
+    
+    
+    button.create-todo-button:active > p.plus {
+        position: relative;
+        transform: rotate(360deg);
+    }
+}
