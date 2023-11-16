@@ -59,6 +59,7 @@ function ToDoProvider({ children }) {
         else{
           setAddedEvent(true);
           setErrorAddedEvent([false,false,false])
+          setNClick([0,0,0]);
           const newToDos = [...toDos];
           const newToDosList = [...item];
           newToDos.push(newToDo);
@@ -80,6 +81,7 @@ function ToDoProvider({ children }) {
         else{
           setAddedEvent(true);
           setErrorAddedEvent([false,false,false])
+          setNClick([0,0,0]);
           const newToDosList = [...item];
           newToDosList.push(newList);
           saveToDos(newToDosList);
@@ -99,6 +101,7 @@ function ToDoProvider({ children }) {
           newToDosList.push({id:0,name:'Nueva lista',toDos:[]});
         }
         saveToDos(newToDosList);
+        setNClick([0,0,0]);
         act();
       }
 
@@ -116,6 +119,7 @@ function ToDoProvider({ children }) {
         else{
         newToDosList[itemIndex] = {id:itemIndex,name:newName,toDos:newToDosList[itemIndex].toDos}
         saveToDos(newToDosList);
+        setNClick([0,0,0]);
         setAddedEvent(true);
         setTimeout(()=>{
           setAddedEvent(false)
