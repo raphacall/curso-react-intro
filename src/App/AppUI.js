@@ -65,9 +65,9 @@ function AppUI(){
                     >      
                         <CreateNewListButton 
                             onClick={()=> {
-                                setNClick([nClick[0],nClick[1]+1]);
-                                if (nClick[1] === 2)  {
-                                    setNClick([nClick[1],0]);
+                                setNClick([0,nClick[1]+1]);
+                                if (nClick[1] === 1)  {
+                                    setNClick([0,0]);
                                     setOpenModal([true,'modalList']);
                                 }
                             }}
@@ -105,9 +105,9 @@ function AppUI(){
                     </ToDoList>
                     <CreateToDoButton 
                         onClick={()=> {
-                            setNClick([nClick[0]+1,nClick[1]]);
-                            if (nClick[0] === 2)  {
-                                setNClick([0,nClick[1]]);
+                            setNClick([nClick[0]+1,0]);
+                            if (nClick[0] === 1)  {
+                                setNClick([0,0]);
                                 setOpenModal([true,'modalTodo']);
                             }
                         }}
