@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.30119ffa.css",
-    "main.js": "/static/js/main.a94d2d83.js",
-    "static/media/Delete.svg": "/static/media/Delete.3725844628acaf44b7d3d591b9238350.svg",
-    "static/media/ToDoLogo.svg": "/static/media/ToDoLogo.b579f8acc68290a733538abbb34617b4.svg",
-    "index.html": "/index.html",
-    "static/media/Check.svg": "/static/media/Check.ef49f6dbfaf5d517951fd7f1bc21e995.svg",
-    "main.30119ffa.css.map": "/static/css/main.30119ffa.css.map",
-    "main.a94d2d83.js.map": "/static/js/main.a94d2d83.js.map"
+    "main.css": "/curso-react-intro/static/css/main.bbeeab21.css",
+    "main.js": "/curso-react-intro/static/js/main.6f1fa301.js",
+    "static/media/DeleteListSVG.svg": "/curso-react-intro/static/media/DeleteListSVG.e598f3da9f05b5cce95572ecdbd6996e.svg",
+    "static/media/RenameListSVG.svg": "/curso-react-intro/static/media/RenameListSVG.d63149ef9aac1a2260ff26d5c704e56d.svg",
+    "static/media/Delete.svg": "/curso-react-intro/static/media/Delete.3725844628acaf44b7d3d591b9238350.svg",
+    "static/media/ToDoLogo.svg": "/curso-react-intro/static/media/ToDoLogo.b579f8acc68290a733538abbb34617b4.svg",
+    "index.html": "/curso-react-intro/index.html",
+    "static/media/Check.svg": "/curso-react-intro/static/media/Check.ef49f6dbfaf5d517951fd7f1bc21e995.svg",
+    "static/media/open-arrow.svg": "/curso-react-intro/static/media/open-arrow.430e7783edb2e51c1f51de821b53cbad.svg",
+    "main.bbeeab21.css.map": "/curso-react-intro/static/css/main.bbeeab21.css.map",
+    "main.6f1fa301.js.map": "/curso-react-intro/static/js/main.6f1fa301.js.map"
   },
   "entrypoints": [
-    "static/css/main.30119ffa.css",
-    "static/js/main.a94d2d83.js"
+    "static/css/main.bbeeab21.css",
+    "static/js/main.6f1fa301.js"
   ]
 }
