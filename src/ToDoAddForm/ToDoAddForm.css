@@ -10,7 +10,7 @@ form.add-form-box{
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    top: calc(50vh - height);
+    top: calc(50vh - 200px);
     background-color: #1e1e1e;
     border-radius: 5px;
     padding: 30px;
