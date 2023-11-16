@@ -30,11 +30,11 @@ li.todo-item p.todo-text-completed{
     color: #1E1E1E;
 }
 li.todo-item span.Icon-Check {
-    width: 20px;
+    width: 0;
     display: none;
 }
 li.todo-item span.Icon-Delete {
-    width: 15px;
+    width: 0;
     display: none;
 }
 li.todo-item span.Icon-Check svg:hover{
@@ -58,9 +58,13 @@ li.todo-item:hover p.todo-text{
 
 li.todo-item:hover span.Icon-Check{
     display: block;
+    width: 20px;
+    transition: all .5s ease;
 }
 li.todo-item:hover span.Icon-Delete{
     display: block;
+    width: 15px;
+    transition: all .5s ease;
 }
 
 @media (max-width: 640px) {
@@ -71,10 +75,12 @@ li.todo-item:hover span.Icon-Delete{
         margin-left: 30px;
         font-size: 14pt;
     }
-li.todo-item span.Icon-Check {
+li.todo-item:hover span.Icon-Check {
     width: 30px;
+    transition: all .5s ease;
 }
-li.todo-item span.Icon-Delete {
-    width: 22,5px;
+li.todo-item:hover span.Icon-Delete {
+    width: 22.5px;
+    transition: all .5s ease;
 }
 }
